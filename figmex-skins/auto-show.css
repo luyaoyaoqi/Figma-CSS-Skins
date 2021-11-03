@@ -1,0 +1,42 @@
+/*说明地址： https://www.wolai.com/rV1DYSm7mXMKjw4S9MBf9f */
+
+/* 整体加阴影 */
+.FigmaExApp .ExBar.glass {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 【必要】鼠标移入自动整体宽度为122px；若调整加减，请把下方两个132px内容宽度也用样加减 */
+.FigmaExApp:not(.expanded) .ExBar:hover {
+    width: 122px;
+}
+
+/* 【必要】内容宽度1 */
+.FigmaExApp:not(.expanded) .ExBar .header {
+    width: 132px;
+}
+
+/* 非选中时隐藏头部输入框文字 */
+.FigmaExApp:not(.expanded) .ExBar:not(:hover) .header .find-input input {
+    opacity: 0;
+}
+
+/* 【必要】内容宽度2 */
+.FigmaExApp:not(.expanded) .ExBar:hover .action-list {
+    width: 132px;
+}
+
+/* 隐藏非编辑状态的编辑按钮 */
+.FigmaExApp:not(.expanded) .ExBar:hover .ActionItem .note-but {
+    display: none;
+}
+
+/* 调整插件的原始名称颜色 */
+.FigmaExApp .ExBar:hover .ActionItem .action-info .name {
+    color: #7e91bc;
+}
+
+/* 调整插件自定义名称大小和颜色 */
+.FigmaExApp .ExBar:hover .ActionItem .action-info .note-name {
+    color: unset;
+    transform: scale(1);
+}
