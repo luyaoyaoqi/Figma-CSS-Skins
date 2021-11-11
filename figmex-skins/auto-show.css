@@ -40,3 +40,8 @@
     color: unset;
     transform: scale(1);
 }
+
+/* 隐藏原有的悬浮文字提示 */
+.FigmaExApp .tooltip.main-icon-tooltip {
+    display: none !important;
+}
